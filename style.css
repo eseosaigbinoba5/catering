@@ -1,263 +1,376 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing:border-box;
+    
+
 }
 
-nav {
-    background-color: white;
-    padding: 18px 10px;
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    box-shadow: 0 0 8px 0 black;
-}
 
-nav p a, nav ul li a {
-    text-decoration: none;
-    color: black;
-    padding: 12px 16px;
-    letter-spacing: 3px;
-}
-
-nav p a:hover, nav ul li a:hover {
-    background-color: gainsboro;
-}
-
-nav ul {
-    list-style-type: none;
-    float: right;
-    margin-top: -18px;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-.banner {
+.hero {
+    height: 100vh;
+    background: url(pics/wedding_couple.jpg) center/cover no-repeat;
     position: relative;
+
 }
 
-.banner p {
+.text-overlay {
     position: absolute;
-    bottom: 30px;
-    left: 30px;
-    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.text-overlay h1 {
+    font-size: 64px;
+    font-weight: 300;
     letter-spacing: 3px;
-    color: rgba(0, 0, 0, 0.61);
+    margin: 0;
+}
+
+.text-overlay p {
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 10px 0;
+
+
+}
+
+.text-overlay span {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.jane {
+    background-color:rgba(255, 192, 203, 0.788);
+    padding: 60px 20px;
+    opacity: 7;
+}
+
+.jane h2 {
+    position: relative;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.397);
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.image-box {
+    max-width: 800px;
+    margin: auto;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    display: block;
+    filter: grayscale(2);
+
 }
 
 .about {
-    padding: 80px 130px;
-}
-
-.about .left {
-    float: left;
-    margin-right: 50px;
-}
-
-.about .left img {
-    width: 550px;
-    border-radius: 5px;
-}
-
-.about .right h1 {
+    color: rgba(0, 0, 0, 0.596);
+    padding: 60px 20px;
     text-align: center;
-    padding-top: 40px;
-    font-weight: 400;
-    letter-spacing: 3px;
-    font-size: 40px;
+    filter: grayscale(1);
+    
+    
+    
 }
 
-.about .right h5 {
-    text-align: center;
-    padding: 60px 0 35px;
-    letter-spacing: 5px;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.about .right .up {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.about .right .up span {
-    background-color: gainsboro;
-    padding: 2px 6px;
-}
-
-.about .right .down {
-    padding-top: 35px;
-    font-size: 18px;
-    line-height: 1.6;
-    color: rgba(0, 0, 0, 0.644);
-}
-
-.line {
-    height: .1px;
-    background-color: rgba(0, 0, 0, 0.068);
-    margin: 100px 130px 0px;
-}
-
-
-.menu {
-    padding: 80px 130px;
-}
-
-.menu .left {
-    float: left;
-    margin-right: 50px;
-} 
-
-.menu .left h1 {
-    text-align: center;
-    padding: 40px 0;
-    font-weight: 400;
-    letter-spacing: 3px;
-    font-size: 40px;
-}
-
-.menu .left .up {
-    font-size: 20px;
-    letter-spacing: 3px;
-}
-
-.menu .left .down {
-    padding: 30px 0 50px;
-    color: rgba(0, 0, 0, 0.562);
-}
-
-.menu .right img {
-    width: 550px;
-    border-radius: 5px;
-}
-
-.line1 {
-    height: 1px;
-    background-color: rgba(0, 0, 0, 0.075);
-    margin: 0px 130px 0px;
-    border: none;
-}
-
-.contact {
-    padding: 30px 130px 80px;
-}
-
-.contact h1 {
-    padding: 40px 0;
-    font-weight: 400;
-    letter-spacing: 3px;
-    font-size: 40px;
-}
-
-.contact .add {
-    color: rgb(110, 97, 122);
-    font-weight: 600;
-    font-size: 17px;
-    padding: 25px 0;
-}
-
-.contact form {
-    padding-top: 30px;
-}
-
-.contact form input {
-    width: 100%;
-    height: 50px;
-    margin-bottom: 10px;
-    text-indent: 5px;
+.about .about-content p {
+    padding:0 15% ;
+    display: flex;
     font-size: 15px;
-    border-color: rgba(0, 0, 0, 0.192);
-    border-style: solid;
-    border-width: 0 0 1px 0;
+    text-align: left;
+    
+
 }
 
-.contact form button {
-    padding: 10px 15px;
+
+.about .about-content button {
+    padding: 20px 13px;
+    font-size: 17px;
     border: none;
+    background-color: black;
+    color: white;
     margin-top: 15px;
+
 }
 
-.contact form button:hover {
+.about .about-content button:hover {
     background-color: gainsboro;
-}
-
-footer {
-    padding: 60px 0;
-    text-align: center;
-    background-color: gainsboro;
-}
-
-footer p a {
     color: black;
 }
 
-footer p a:hover {
+.flowers {
+    height: 100vh;
+    background: url(pics/flowers.jpg) center /cover no-repeat;
+    position: relative;
+}
+
+.flowers .text  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+
+}
+
+.flowers .text h3 {
+     font-size: 64px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin: 0;
+
+}
+
+.flowers .text p {
+     padding-top: 30px;             
+    font-size: 26px;
+    text-align: center;
+
+}
+
+.wedding {
+    background-color: rgba(255, 192, 203, 0.425);
+    padding: 60px 20px;
+    opacity: 7;
+    filter: grayscale(0);
+}
+
+.wedding h4 {
+     position: relative;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.397);
+    font-family: sans-serif;
+    font-size: 31px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+
+}
+
+.wedding-location {
+    max-width: 800px;    
+    margin: auto;
+    border-radius: 4px;
+    overflow: hidden;
+    
+
+}
+
+.wedding-location img {
+    width: 100%;
+    height: 300px;
+    filter: grayscale(1);
+
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    padding: 80px 15%;
+    
+}
+
+
+.location .left h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+
+}
+
+.location .left p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 12px;
+}
+
+
+.location .right h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.location .right p {
+    font-size: 16px ;
+    color: rgba(0, 0, 0, 0.534);
+    margin-bottom: 12px;
+}
+
+.RSVP {
+    background-color: rgba(255, 192, 203, 0.678);
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 100px;
+
+
+}
+
+
+.RSVP h1 {
+        margin-bottom: 21px;
+    text-align: center;
+    
+}
+
+.RSVP p {
+    font-size: 16px;
+    color: black;
+    padding: 25px 0;
+}
+
+.RSVP button {
+        padding: 20px 50px;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(224, 107, 127);
+    color:white;
+    margin-top: 15px;
+
+}
+
+.RSVP button:hover {
+      background-color: gainsboro;
+    color: black;
+
+}
+
+.end footer {
+    padding: 20px 0;
+    background-color: black;
+
+}
+.end footer p {
+    text-align: center;
+    color: white;
+}
+
+.end footer p a {
+    color: white;
+}
+
+.end footer p a:hover {
     color: green;
 }
 
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.582);
+    padding: 20px 0;
+    border: none;
+    letter-spacing: 13;
+}
 
-@media screen and (max-width:768px) {
+nav ul {
+    display: flex;
+    justify-content: center;
+    /* gap: 60px; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 14px;
+    letter-spacing: 6px;
+    padding: 14px 120px;
+}
+
+nav a:hover {
+    background-color: rgba(220, 220, 220, 0.664);
+}
+
+nav:hover {
+    background-color: white;
+}
+
+nav .different li a:hover {
+    background-color: black;
+    color: white;
+    padding: 19px 30px;
+}
+
+
+
+   @media screen and (max-width:320px ) {
+    .hero {
+        height: 250px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+
+    .text {
+        width: 90%;
+    }
+
+    .text-overlay span {
+            display: none;
+            
     
-    .about, .menu, .contact {
-        padding: 80px 20px;
     }
 
-    .about .left img {
-        width: 350px;
+
+    .about .about-content p {
+            padding:0 5% ;
+            letter-spacing: 3px;
+            justify-content: space-between;
+            font-weight: 700;
+            font-family: sans-serif;
+            font-style: italic;
+
     }
 
-    .about .right h1 {
-        padding-top: 10px;
+
+    .about .about-content button {
+            padding: 14px;
+            width: 70%;
+    margin-top: 19px;
+
     }
 
-    .about .right h5 {
-        padding: 40px 0 15px;
-    }
+    
 
-    .about .right .down {
-        display: none;
-    }
+    
+   }
+   
 
-    .line {
-        margin: 0px 20px 0px;
-    }
 
-    .menu .left {
-        float: none;
-        margin-right: 0px;
-    } 
 
-    .menu .left h1 {
-        padding: 0px 0;
-    }
+   
 
-    .menu .right img {
-        width: 100%;
-        border-radius: 5px;
-    }
 
-    .line1 {
-        margin: 0px 20px 0px;
-    }
 
-    .contact h1 {
-        padding: 0px 0;
-    }
-}
-
-@media screen and (max-width:426px) {
-    nav ul {
-        display: none;
-    }
-
-    .about .left {
-        display: none;
-    }
-
-    .about .right .down {
-        display: block;
-    }
-}
 
